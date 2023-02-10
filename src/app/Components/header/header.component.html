@@ -1,0 +1,13 @@
+<div class="bar">
+    <div class="title">
+        <h1><span style="color:rgba(141, 2, 2, 0.918)">TA</span>gReview</h1>
+        <h5 class="user"><b>Welcome, {{fullName}}</b></h5>
+        <img [src]="source" class="image">
+    </div>
+    
+    <div class="nav">
+        <a routerLink="/home" data-bs-toggle="tooltip" data-bs-placement="top" title="Home Page"><b>HOME</b></a>
+        <a routerLink="/homepage" data-bs-toggle="tooltip" data-bs-placement="top" title="View employee list"><b>EMPLOYEE LIST </b> </a>
+        <button id = "buttons" class="btn btn-danger" (click) = "onLogout()"><b>LOGOUT</b></button>
+    </div>
+</div>

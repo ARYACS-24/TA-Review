@@ -1,0 +1,51 @@
+.bar {
+    display: flex;
+    background-color: rgb(255, 178, 127);
+    padding-top: 0px;
+}
+
+.title {
+    padding: 5px 30px;
+    color: rgb(10, 63, 0)
+}
+
+h1 {
+    margin-top: 16px;
+}
+
+.image {
+    margin-left: 87%;
+    width: 8%;
+    top: 3px;
+    position: absolute;
+}
+
+.nav {
+    padding: 35px 90px;
+    margin-left: 459px;
+}
+
+h2 {
+    color: royalblue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #212F3D;
+    margin: 0px 10px;
+}
+
+#buttons{
+    position: relative;
+    bottom: 11px;
+    right: -10px;
+}
+
+.user{
+    position: relative;
+    left: 386%;
+    bottom: 1px;
+    color:rgb(104, 23, 43)
+}
+

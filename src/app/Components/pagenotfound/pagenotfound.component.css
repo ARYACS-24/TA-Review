@@ -1,0 +1,11 @@
+.error {
+    text-align: center;
+    margin: 30px;
+}
+
+.btn{
+    margin-top: 20px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
