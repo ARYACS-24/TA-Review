@@ -1,0 +1,19 @@
+<app-header></app-header>
+<br>
+<button routerLink='/homepage' class="btn btn-outline-info">Back to Home</button>
+
+<div class="mb-3" class="form-center">
+<form [formGroup]="reviewForm" (ngSubmit)="reviewSubmit()">
+
+    <h5><b>Employee ID:</b> {{empId}}</h5>
+    
+    <input type="date" placeholder="Enter Date" formControlName="rDate" style="width:25%" class="form-control">
+    <span *ngIf="rDate && rDate.invalid && rDate.touched" style="color: red">Invalid Date</span>
+    <br>
+    <textarea type="string" placeholder="Enter Feedback" formControlName="feedback"
+        style="height:200px;width:25%" class="form-control"></textarea>
+    <span *ngIf="feedback && feedback.invalid && feedback.touched" style="color: red">Enter the feedback</span>
+
+    <button type="submit" [disabled]="reviewForm.invalid" class="btn btn-outline-success w-25">Save</button>
+</form>
+</div>

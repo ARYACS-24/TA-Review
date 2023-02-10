@@ -1,0 +1,28 @@
+#users {
+  font-family: 'Times New Roman', Times, serif;
+  width: 77%;
+}
+
+#users td,
+#users th {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(133, 48, 9);
+  color: white;
+  text-align: center;
+}
+
+.btn{
+  margin-top: 20px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}

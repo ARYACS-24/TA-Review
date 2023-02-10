@@ -1,0 +1,21 @@
+<app-header></app-header>
+<br>
+<table align="center" id="users">
+  <tr>
+    <th>Date</th>
+    <th>Review</th>
+    <ng-container *ngIf="role === 'Admin'">
+    <th>Actions</th>
+    </ng-container>
+  </tr>
+  <tr *ngFor="let update of reviewsData">
+    <td>{{update.rDate | date:'dd/MM/yyy'}}</td>
+    <td>{{update.feedback}}</td>
+    <ng-container *ngIf="role === 'Admin'">
+    <td><button class="btn btn-sm btn-danger" (click)="delReview(update.reviewID)"
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Review">
+      <i class="fa fa-remove"></i>Delete</button></td></ng-container>
+  </tr>
+</table>
+<br>
+<button routerLink='/homepage' class="btn btn-outline-info" >Back to Home</button>
